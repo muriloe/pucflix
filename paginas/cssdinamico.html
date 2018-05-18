@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title> Exercício CSS </title>
+		<meta charset="UTF-8">
+		<style>
+			input { display: inline;
+					border: 1px solid #ccc;
+					margin-top:3px;
+					padding-top:10px;
+					padding-left:20px;
+					padding-bottom:10px;
+					border-radius:2px;
+					border-width:1px;
+					}
+			
+			.erro {
+				display: inline;
+				border: 1px solid #FA5858;
+				hover-color: #FA5858;
+				margin-top:3px;
+				padding-top:10px;
+				padding-left:20px;
+				padding-bottom:10px;
+				border-radius:2px;
+				border-width:1px;
+
+			}
+			
+			.erro::placeholder{
+				color: red;
+			}
+
+			button { margin-top:20px;
+					width:100px;
+					padding:10px;
+					border: none;
+					background-color: #088A68;
+					color: white;
+					border-radius:2px;}
+			
+	
+					
+			.botaoBonitoClass {
+				margin-top:20px;
+				width:200px;
+				padding:10px;
+				border: none;
+				background-color: #04B486;
+				color: white;
+				border-radius:2px;	
+			}
+			
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			
+			function myFunction(){
+				$(botaoBonito).addClass("botaoBonitoClass");
+				if( !document.getElementById('nome').value ) {
+					$(nome).addClass("erro");
+				}
+				if( !document.getElementById('sobrenome').value ) {
+					$(sobrenome).addClass("erro");
+				}
+				if( !document.getElementById('email').value ) {
+					$(email).addClass("erro");
+				}
+				if( !document.getElementById('matricula').value ) {
+					$(matricula).addClass("erro");
+				}
+				if( !document.getElementById('usuario').value ) {
+					$(usuario).addClass("erro");
+				}
+				if( !document.getElementById('senha').value ) {
+					$(senha).addClass("erro");
+				}
+				if( !document.getElementById('confirmaSenha').value ) {
+					$(confirmaSenha).addClass("erro");
+				}
+				
+				var senha1 = document.getElementById('senha').value;
+				console.log(senha1);
+				var confirmaSenha1 = document.getElementById('confirmaSenha').value;
+				console.log(confirmaSenha1);
+				if ( (senha1 == confirmaSenha1)){
+					console.log("senhas iguais");
+					
+				}
+				else{
+					console.log("senha difernte");
+					$(senha).addClass("erro");
+					$(confirmaSenha).addClass("erro");
+				}
+
+				
+			}
+		</script>
+
+	</head>
+	
+	<body>
+	  <input id="nome" type="text" name="nome" placeholder="Nome"><br>
+	  <input id="sobrenome" type="text" name="sobrenome" placeholder="Sobrenome"><br>
+	  <input id="email" type="text" name="email" placeholder="E-mail"><br>
+	  <input id="matricula" type="text" name="matricula" placeholder="Matricula"><br>
+	  <input id="usuario" type="text" name="usuario" placeholder="Usuário"><br>
+	  <input id="senha" type="password" name="senha" placeholder="Senha"><br>
+	  <input id="confirmaSenha" type="password" name="confirmaSenha" placeholder="Confirmar Senha"><br>
+	  <button id="botaoBonito" type="button" onclick="myFunction()">Click Me!</button>
+
+	</body>
+</html>
