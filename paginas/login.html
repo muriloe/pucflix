@@ -3,7 +3,8 @@
 		<title> Exercício CSS </title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../css/styles.css">
-		<script src="../js/scripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/login.css">
+		<script src="../js/login.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	
@@ -19,12 +20,12 @@
 		<div class="divCenter content" align="center">
 			<div align="left">
 				<label> Email:</label><br>
-	            <input id="nome" type="text" name="email" placeholder="Email" class="botaoBonitoClass"><br>
+	            <input onfocusout="verificarCampoEmail()" id="email" type="email" name="email" placeholder="Email" class="botaoBonitoClass"><br>
 	            <label> Senha:</label><br>
-	            <input id="senha" type="password" name="senha" placeholder="Senha" class="botaoBonitoClass"><br>
+	            <input onfocusout="verificarCampoSenha()"  id="senha" type="password" name="senha" placeholder="Senha" class="botaoBonitoClass"><br>
 			</div>
 			<br>
-			<button type="button" onclick="myFunction()" class="btnDeafeault">Logar</button>
+			<button id="loginBtn" type="button" onclick="login()" class="btnDeafeault">Logar</button>
 		</div>
 	</body>
 </html>
