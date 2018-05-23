@@ -5,7 +5,6 @@
 
 .bodyStyle {
     background-color: #070000;
-    z-index: 2;
 }
 
 
@@ -45,4 +44,28 @@
 				float: right;
 }
 
+.btnDeafeault {
+				width:100px;
+				padding:10px;
+				margin: 5px;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-bottom-color: #ba4656;
+				background-color: #A2293A;
+				color: white;
+				border-radius:2px;	
+				font-weight: bold;
+}
+
+.btnDeafeault:hover {
+				width:100px;
+				padding:10px;
+				margin: 5px;
+				border-bottom-color: #A2293A;
+				background-color: #ba4656;
+				color: white;
+				border-radius:2px;	
+				font-weight: bold;
+}
 

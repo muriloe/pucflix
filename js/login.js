@@ -1,10 +1,9 @@
-
 	function login(){
 		$(loginBtn).addClass("btnDeafeault");
-		var email = document.getElementById('email').value;
-		var senha = document.getElementById('senha').value;
-		console.log(email + senha);
+
+
 		if( !document.getElementById('email').value ) {
+			
 			$(email).addClass("erro");
 		}
 		else{
@@ -17,11 +16,34 @@
 		}
 		if(email  && senha){
 			console.log("campos preenchidos");
-			location.href='userPage.html';
+			validarLogin(document.getElementById('email').value, document.getElementById('senha').value)
+			
 		}
 	}
 	
+	function validarLogin(email, senha){
+	    var login = {
+            email: email,
+            senha: senha,
+        }
+        console.log(login);
+        $.ajax({
+            url: '../php/login.php',
+            type: 'post',
+            dataType: 'json',
+            data: login,
+            success: function (data) {
+                console.log(data + '---');
+                if(data === 0){
+                	window.location.href = 'userPage.html';
+                }
+            },
+            
+        });
+	}
+	
 	function verificarCampoEmail(){
+		console.log(document.getElementById('email').value);
 		$(loginBtn).addClass("btnDeafeault");
 		if( !document.getElementById('email').value ) {
 			$(email).addClass("erro");
@@ -40,4 +62,3 @@
 			$(senha).removeClass("erro");
 		}
 	}
-
