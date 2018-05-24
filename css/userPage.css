@@ -6,7 +6,7 @@
 				margin-left: 20px;
 				margin-right: 20px;
 				border-bottom-color: #ba4656;
-				background-color: #A2293A;
+				background-color: #17181b;
 				color: white;
 				border-radius:2px;	
 				font-weight: bold;
@@ -62,13 +62,17 @@ input { display: inline;
 .Right {
     width: 300px;
     height: 50%;
-    background-color: red;
+    background-color: #dce2ec;
     margin-right: 20px;
     margin-top: 87px;
+    border: 3px solid #ba4656;
+    border-radius: 2px;
+    border-width: 2px;
+    
 }
 
 div.scrollmenu {
-    background-color: #333;
+    background-color: #1b1c20;
     overflow: auto;
     white-space: nowrap;
 }
@@ -94,3 +98,34 @@ div.scrollmenu {
 h1{
     color: white;
 }
+
+.btnVer {
+    width: 70%;
+	padding:10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: #ba4656;
+	background-color: #A2293A;
+	color: white;
+	border-radius:2px;	
+	font-weight: bold;
+}
+
+.btnVer:hover {
+    width: 70%;
+	padding:10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: #A2293A;
+	background-color: #ba4656;
+	color: white;
+	border-radius:2px;	
+	font-weight: bold;
+}
+

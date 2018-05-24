@@ -66,17 +66,17 @@ th {
 	border-style: none;		
 }
 .tabelaborda tr:nth-child(2n+1) { 
-	background-color: #6395F2;
-}
-.tabelaborda tr:nth-child(2n) { 
 	background-color: #DEE9FC;
 }
+.tabelaborda tr:nth-child(2n) { 
+	background-color: #acafb5;
+}
 .tabelaborda tr:hover { 
-	background-color: #0A337F;
+	background-color: #dc060f8a;
 	color: white;
 }
 .tabelaborda tr:first-child { 
-	background-color: #a2293a;
+	background-color: #333;
 }
 .tabelaborda th {
 	color: white;
@@ -106,7 +106,7 @@ th {
 	background-color: #A2293A;
 	color: white;
 	border-radius:2px;	
-	font-weight: bold;
+	font-weight: lighter;
 }
 
 .btnSave:hover {

@@ -66,5 +66,15 @@ require("dataBaseConn.php");
         print json_encode($rows);
 
     }
+    
+    if($_GET['deletar']){
+        Database::initialize();
+        $id= $_GET['deletar'];
+        $sql1 = "DELETE from filmes where id=".$id;
+        echo $sql1;
+        $sth = mysqli_query(Database::$conn, $sql1);
+        echo "1";
+
+    }
 
 ?>
