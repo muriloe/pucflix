@@ -87,7 +87,8 @@
                         titulo VARCHAR(45) NOT NULL, 
                         ano INT NOT NULL, 
                         autor VARCHAR(45) NOT NULL, 
-                        img_url VARCHAR(45) NOT NULL, 
+                        img_url VARCHAR (500) NOT NULL, 
+                        video_url VARCHAR (500),
                         fk_genero int NOT NULL,
                         FOREIGN KEY (fk_genero) REFERENCES generos(id)
         )";

@@ -4,6 +4,7 @@ require("dataBaseConn.php");
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
+
 $sql = "SELECT is_admin FROM usuarios WHERE email='".$email."' AND senha='".$senha."'";
 
 Database::initialize();
@@ -14,7 +15,7 @@ if ($result->num_rows > 0) {
     }
 }
 else{
-   echo 'não'; 
+   echo '2'; 
 }
 
 

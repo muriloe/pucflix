@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title> Exercício CSS </title>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/admin.css">
+		<script src="../js/admin.js"></script>
+	</head>
+	
+	<body class="bodyStyle">
+	
+	<div class="headerStyle">
+		<a  href="../index.html"><img src="../img/assets/logo.png" width="125"></a>
+		<button class="btnHeader">Entrar</button>
+		<button class="btnHeader">Cadastrar</button>
+	</div>
+	
+	<div class="Container">
+        <div class="Middle">
+            <h1>#Planeta PUC</h1>
+            <table id="tabela" class='tabelaborda'>
+                
+        			
+
+		</table>
+
+            
+        </div>
+        
+        <div class="Right">
+            <center><h2>Novo Filme</h2></center>
+            <div align="left">
+				<label> Título:</label><br>
+	            <input  id="titulo" onfocusout="verificarCampoTitulo()" type="text" name="titulo" placeholder="Título"><br>
+	            <label> Ano:</label><br>
+	            <input  id="ano" type="number" onfocusout="verificarCampoAno()" name="ano" placeholder="Ano"><br>
+	            <label> Autor:</label><br>
+	            <input  id="autor" type="text" name="autor" onfocusout="verificarCampoAutor()" placeholder="Autor"><br>
+                <label> Url da foto:</label><br>
+	            <input  id="urlFoto" type="text" name="urlFoto" onfocusout="verificarCampoUrlFoto()" placeholder="url da foto"><br>
+	            <label> Url do video:</label><br>
+	            <input  id="urlVideo" type="text" name="urlVideo" placeholder="url do video"><br>
+	            <label> Genêro:</label><br>
+	            <select id="genero" class="selectPersonalizado">
+	            </select>
+	            <h6><div onclick="adicionarNovaCategoria()">Adicionar nova categoria</div></h6>
+	            <br><br>
+	            <button class="btnSave" onclick="verificarCamposSalvar()">Salvar</button>
+			</div>
+        
+        
+        </div>
+    </div>
+
+	</body>
+</html>

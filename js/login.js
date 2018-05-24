@@ -22,6 +22,7 @@
 	}
 	
 	function validarLogin(email, senha){
+		$("p").empty();
 	    var login = {
             email: email,
             senha: senha,
@@ -36,6 +37,12 @@
                 console.log(data + '---');
                 if(data === 0){
                 	window.location.href = 'userPage.html';
+                }
+                if(data === 1){
+                	window.location.href = 'admin.html';
+                }
+                if(data === 2){
+                	$("p").append("Email ou senha incorretas.");
                 }
             },
             
