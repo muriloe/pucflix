@@ -62,7 +62,7 @@ input { display: inline;
 .Right {
     width: 300px;
     height: 50%;
-    background-color: #dce2ec;
+    background-color: #1b1c20;
     margin-right: 20px;
     margin-top: 87px;
     border: 3px solid #ba4656;
@@ -127,5 +127,25 @@ h1{
 	color: white;
 	border-radius:2px;	
 	font-weight: bold;
+}
+
+h2{
+	color: white;
+
+}
+
+label{
+	color: white;
+}
+
+.buscas{
+	width: 200px;
+	float: right;
+}
+
+.buscaLabel{
+	padding-top: 15px;
+	padding-left: 5px;
+	float: right;
 }
 

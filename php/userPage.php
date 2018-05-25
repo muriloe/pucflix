@@ -1,5 +1,7 @@
 <?php
 require("dataBaseConn.php");
+   
+
     
     if($_GET['genero']){
         Database::initialize();
@@ -35,5 +37,20 @@ require("dataBaseConn.php");
         }
         print json_encode($rows);
     }
+    
+    if($_POST['busca']){
+        Database::initialize();
+        $queryComplementar = " WHERE titulo like '%".$_POST['titulo']."%' AND ano like '%".$_POST['ano']."%' AND autor like '%".$_POST['autor']."%'";
+        
+        $sql = "SELECT * FROM filmes".$queryComplementar;
+        $sth = mysqli_query(Database::$conn, $sql);
+        $rows = array();
+        while($r = mysqli_fetch_assoc($sth)) {
+            $rows[] = $r;
+        }
+        print json_encode($rows);
+    }
+    
+
     
 ?>

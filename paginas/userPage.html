@@ -11,9 +11,16 @@
 	<body class="bodyStyle">
 	
 	<div class="headerStyle">
-		<a  href="../index.html"><img src="../img/assets/logo.png" width="125"></a>
-		<button class="btnHeader">Entrar</button>
-		<button class="btnHeader">Cadastrar</button>
+		<a  href="userPage.html"><img src="../img/assets/logo.png" width="125"></a>
+		<button class="btnHeader" onclick="location.href='login.html'">Logout</button>
+		<button class="btnHeader" onclick="buscar()">Buscar</button>
+		<input  id="titulo" placeholder="Busca Filme" class="buscas">
+		<avancado id="avancado">
+
+		</avancado>
+		<btnavancado id="btnavancado">
+			<label class="buscaLabel" onclick="carregarBuscaAvancada()">Busca Avançada &nbsp</label>
+		</btnavancado>
 	</div>
 	
 	<div class="Container">

@@ -1,12 +1,12 @@
 input { display: inline;
-		border: 1px solid #ccc;
-		margin-top:3px;
-		padding-top:10px;
-		padding-left:20px;
-		padding-bottom:10px;
-		border-radius:2px;
-		border-width:1px;
-		width: 100%;
+  		border: 1px solid #ccc;
+  		margin-top:3px;
+  		padding-top:10px;
+  		padding-left:20px;
+  		padding-bottom:10px;
+  		border-radius:2px;
+  		border-width:1px;
+  		width: 100%;
 }
 
 .erro {
@@ -55,3 +55,6 @@ input { display: inline;
   z-index: 2;
 }
 
+.buscas{
+  
+}
