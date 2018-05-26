@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title> Exercício CSS </title>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/cadastro.js"></script>
+	</head>
+	
+	<body class="bodyStyle">
+		<div class="headerStyle">
+			<a  href="../index.html"><img src="../img/assets/logo.png" width="125"></a>
+		</div>
+		
+		<div class="background-image"></div>
+		<br><br><br><br><br><br>
+		<div class="divCenter content" align="center">
+		    <label>Olá, realize seu cadastro e começe a aproveitar agora mesmo</label>
+			<div align="left">
+				<label> Email:</label><br>
+	            <input onfocusout="verificarCampoEmail()" id="email" type="text" name="email" placeholder="Email" class="botaoBonitoClass"><br>
+	            <label> Senha:</label><br>
+	            <input onfocusout="verificarCampoSenha()"  id="senha" type="password" name="senha" placeholder="Senha" class="botaoBonitoClass"><br>
+	            <label> Confirme a senha:</label><br>
+	            <input onfocusout="verificarCampoConfirmaSenha()"  id="confirmaSenha" type="password" name="confirmaSenha" placeholder="Confirmar senha" class="botaoBonitoClass"><br>
+	            <label> Nome:</label><br>
+	            <input onfocusout="verificarCampoNome()"  id="nome" type="text" name="nome" placeholder="Nome completo" class="botaoBonitoClass"><br>
+	            <label> Cartão de crédito:</label><br>
+	            <input onfocusout="verificarCampoCartao()"  id="cCredito" type="number" name="cCredito" placeholder="Cartão de crédito" class="botaoBonitoClass"><br>
+	            <label> Bandeira:</label><br>
+	            <select id="bandeira" class="selectPersonalizado">
+	            </select>
+			</div>
+			<br>
+			<button id="loginBtn" type="button" onclick="cadastrar()" class="btnDeafeault">Cadastrar</button><br>
+			<p> </p>
+		</div>
+	</body>
+</html>

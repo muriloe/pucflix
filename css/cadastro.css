@@ -1,0 +1,72 @@
+input { display: inline;
+  		border: 1px solid #ccc;
+  		margin-top:3px;
+  		padding-top:10px;
+  		padding-left:20px;
+  		padding-bottom:10px;
+  		border-radius:2px;
+  		border-width:1px;
+  		width: 100%;
+}
+
+.erro {
+	display: inline;
+	border: 1px solid #FA5858;
+	hover-color: #FA5858;
+	margin-top:3px;
+	padding-top:10px;
+	padding-left:20px;
+	padding-bottom:10px;
+	border-radius:2px;
+	border-width:1px;
+
+}
+		
+		
+.divCenter {
+    margin: auto;
+    width: 40%;
+    height: 500px;
+    border: 3px solid #ba4656;
+    padding: 30px;
+    background-color: white;
+    border-radius: 2px;
+    border-width: 2px;
+}	
+
+.background-image {
+  background-image: url('https://noticiasdapucpr.files.wordpress.com/2014/01/cropped-pucpr_biblioteca.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.content {
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+.buscas{
+  
+}
+
+.selectPersonalizado{
+       display: inline;
+		border: 1px solid #ccc;
+		margin-top:3px;
+		padding-top:10px;
+		padding-left:20px;
+		padding-bottom:10px;
+		border-radius:2px;
+		border-width:1px;
+		width: 100%;
+}
