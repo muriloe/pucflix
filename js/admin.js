@@ -21,12 +21,12 @@ function loadGeneros(){
 function adicionarNovaCategoria() {
     console.log("add novo genero");
     fecharJanela();
-    $("h6").append(" <hr><h3><label>Nova genero:</label></h3><input id='novaCategoria' name='novaCategoria'><button class='btnSaveCategoria' onclick='salvarNovaCategoria()'>Adicionar</button><button class='btnSaveCategoria' onclick='fecharJanela()'>Fechar</button><hr>");
+    $("h6").append(" <hr><h3><label>Nova gênero:</label></h3><input id='novaCategoria' name='novaCategoria'><button class='btnSaveCategoria' onclick='salvarNovaCategoria()'>Adicionar</button><button class='btnSaveCategoria' onclick='fecharJanela()'>Fechar</button><hr>");
 }
 
 function fecharJanela(){
     $("h6").empty();
-    $("h6").append("<div onclick='adicionarNovaCategoria()'>Adicionar nova categoria</div>");
+    $("h6").append("<div onclick='adicionarNovaCategoria()'>Adicionar novo gênero</div>");
 }
 
 function salvarNovaCategoria(){
