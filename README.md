@@ -1,6 +1,6 @@
 # Pucflix
 
-Projeto da matéria de Téc. Prog para criar um site semelhante a netflix sem utilizar nenhum fremework (ex: bootstrap), usando HTML, css e javascript (jquery).
+Projeto da matéria de Téc. Prog da PUCPR para criar um site semelhante a netflix sem utilizar nenhum fremework (ex: bootstrap), usando HTML, css e javascript (jquery).
 
 ## Tecnologia utilizadas
 Java Script (ajax, jquery), HTML, CSS, mysql
